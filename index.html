@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Link to CSS stylesheet-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <title>Lisa The Editrix</title>
+</head>
+<body>
+
+    <div class="jumbotron jumbo-img">
+        <img src="assets/img/typewriter-lisa-purple.jpg" class="typewriter-img" alt="Lisa Cunningham Typist Extraordinaire!">
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="nav justify-content-center flex-md-row flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-me-anchor">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resume-anchor">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#what-i-do-anchor">What I Do</a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                    <img class="navbar-logo" src="assets/img/4.png" height="50px" width="80px">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#my-work-anchor">My Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#demo">References</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-anchor">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me-section" class="section">
+        <article>
+            <figure>
+                <div class="anchor-div" id="about-me-anchor"></div>
+                <img alt="Lisa's circle headshot" src="assets/img/lisa-bw-whitespace-square.jpg" />
+            </figure>
+            <!-- Blockquote -->
+            <div class="container blockqoute-container">
+                <blockquote class="html-blockquote" id="live"></blockquote>
+                <div class="belongTo hidden" id="belongTo">Lisa Cunningham</div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Resume: Printable PDF Button -->
+    <div class="anchor-div" id="resume-anchor"></div>
+    <section id="resume-section" class="section">
+        <div class="container-fluid">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-2 col-sm-0"></div>
+                    <div class="col-lg-3 col-md-4 col-sm-12 d-flex justify-content-center resume-column">
+                        <a href="assets/docs/Lisa_Cunningham_resume.pdf" target="_blank"><button type="button" class="btn btn-lg">Resume</button></a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12 d-flex justify-content-center resume-column">
+                        <a href="assets/docs/lc-cv.pdf" target="_blank"><button type="button" class="btn btn-lg">CV</button></a>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-sm-0"></div>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center divider-column">
+                        <img src="assets/img/element_13.png" class="img-responsive divider-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What I Do -->
+    <div class="anchor-div" id="what-i-do-anchor"></div>
+    <section class="section container-fluid container-overlay d-flex flex-column justify-content-center align-content-center" id="what-i-do-section">            
+        <div class="row">
+            <div class="col d-flex justify-content-center align-content-start">
+                <h1 class="brand-heading">What I Do</h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-around">
+            <div class="col-md-4 align-content-center">
+                <a class="modal-link" href="#" data-toggle="modal" data-target="#modal-copywriting">
+                    <img class="rounded-circle hover-effect" src="assets/img/copywriting.jpg" alt="Generic placeholder image" width="150" height="150">
+                    <h3>Copywriting</h3>
+                </a>
+            </div>
+            <div class="col-md-4 align-content-center">
+                <a class="modal-link" href="#" data-toggle="modal" data-target="#modal-editing">
+                    <img class="rounded-circle hover-effect" src="assets/img/editing-newspaper.jpg" alt="Generic placeholder image" width="150" height="150">
+                    <h3>Editing</h3>
+                </a>
+            </div>
+            <div class="col-md-4 align-content-center">
+                <a class="modal-link" href="#" data-toggle="modal" data-target="#modal-proofreading">
+                    <img class="rounded-circle hover-effect" src="assets/img/proofreading.jpg" alt="Generic placeholder image" width="150" height="150">
+                    <h3>Proofreading</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Work -->
+    <div class="anchor-div" id="my-work-anchor"></div>
+    <section class="section container-fluid d-flex flex-column justify-content-center" id="my-work-section">
+        <div class="row">
+            <div class="col d-flex justify-content-center align-content-center">
+                <h1 class="brand-heading">My Work</h1>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-md-4 align-content-center">
+                <a href="assets/docs/sample-employee-handbook-the-space.pdf" target="_blank"><i class="fa fa-handshake-o"></i>
+                <h3>Employee Handbook</h3></a>
+            </div>
+            <div class="col-md-4 align-content-center">
+                <a href="assets/docs/sample-awa-security-training-manual.pdf" target="_blank"><i class="fa fa-shield"></i>
+                <h3>Security Training Manual</h3></a>
+            </div>
+            <div class="col-md-4 align-content-center">
+                <a href="assets/docs/violent-nymphs-publication-draft.pdf" target="_blank"><i class="fa fa-book"></i>
+                <h3>Writing Publication</h3></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- References: Carousel -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+            <div class="container-fluid container-overlay d-flex flex-column justify-content-around">
+                <div class="carousel-section"></div>
+                        <h1 class="brand-heading">References</h1>
+            
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                    <li data-target="#demo" data-slide-to="4"></li>
+                </ul>
+              <div class="carousel-item active">
+                    <!-- <img class="img-fluid carousel-img" src="assets/img/overlay-block.jpg" alt="First slide"> -->
+                <div class="img-fluid carousel-img carousel-caption">
+                    <p>Lisa Cunningham played a key role in revamping our new employee training and onboarding system. She restructured and edited the employee handbook. Her work with us included writing a comprehensive list of acronyms standard to industry for all new employees. She also edited our standards and requirements for PPE required required for all guest and employee access to the facility.</p>
+                    <br>
+                    <p>E. R. Heilig, <i>Director of Training at Elanco</i></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                    <!-- <img class="img-fluid carousel-img" src="assets/img/overlay-block.jpg" alt="First slide"> -->
+                <div class="img-fluid carousel-img carousel-caption">
+                    <p>When I first opened my business and started hiring staff, I was overwhelmed with the day to day in addition to just keeping the lights on.  I was so relieved when Ms. Cunningham was able to essentially write my employee handbook and HR documents for me.  Lisa's attention to detail and quick turn around on the projects took a huge load off my plate in this intense time some of you know all too well.  The peace of mind that knowing your documents are up to legal standards and your staff is properly informed about policies and procedures is well worth the investment.</p>
+                    <br>
+                    <p>Constance Palmer, <i>Owner/Operator of The Space Movement Studio</i></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                    <!-- <img class="img-fluid carousel-img" src="assets/img/overlay-block.jpg" alt="First slide"> -->
+                <div class="img-fluid carousel-img carousel-caption">
+                    <p>When we updated our State Standards for Teaching English (K-12), Lisa Cunningham proofread and edited the entire (800 page) document for clarity and consistency. She diligently completed the work without error and ahead of schedule.  I would definitely recommend her services to anyone looking for a proofreader or copyeditor for their business.</p>
+                    <br>
+                    <p>Georgia Department of Education</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                    <!-- <img class="img-fluid carousel-img" src="assets/img/overlay-block.jpg" alt="First slide"> -->
+                <div class="img-fluid carousel-img carousel-caption">
+                    <p>I was at a party getting into an argument with somebody. I told the guy, ‘I'm not putting up with this bullshit.’ Lisa corrected me: ‘You mean this bullshit is something up with which you shall not put.’ In your face, drunk guy!</p>
+                    <br>
+                    <p>Kahle Davis, <i>Owner/Operator of Star Community Bar</i></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                    <!-- <img class="img-fluid carousel-img" src="assets/img/overlay-block.jpg" alt="First slide"> -->
+                <div class="img-fluid carousel-img carousel-caption">
+                    <p>When the college was going through a massive period of reorganization, Ms. Cunningham edited a number of operational guideline documents for our department as well as several others. Without her help, the process would have taken several more months to edit through committees — her work saved us a significant amount of time and money, and was invaluable to our continued smooth operation.</p>
+                    <br>
+                    <p>Traci Thompson, <i>Department Chair of English, WGTC</i></p>
+                </div>
+              </div>
+    
+              <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+            </div>
+    
+            </div>
+          </div>
+       
+    
+    <!-- Contact: Formspree -->
+    <div class="anchor-div" id="contact-anchor"></div>
+    <section id="contact-section" class="container content-section text-center">
+        <h1 class="brand-heading">Contact</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-3 col-md-2 col-sm-1"></div>
+                <div class="col-xl-6 col-md-8 col-sm-10">
+                    <form id="responsiveForm" action="https://formspree.io/lisa.awesome@gmail.com" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name:</label> 
+                            <input type="text" class="form-control" id="name" name="name" required="required"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label> 
+                            <input type="email" class="form-control" id="email" name="_replyto" required="required"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="occasion">Message:</label> 
+                            <input type="text" class="form-control" id="occasion" name="occasion" required="required"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="submit" class="form-control btn" value="Send"/>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xl-3 col-md-2 col-sm-1"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <div id="footer" class="container-fluid">
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+
+                    <div class="row align-items-stretch">
+                        <!--Social and links in one column as the divs differ in height-->
+                        <div class="flex-column col-sm">
+                            <div class="social">
+                                <a aria-label="LinkedIn" href="https://www.linkedin.com/in/lisa-marie-cunningham/" class="social-button linkedin">
+                                    <span class="fa-stack fa-lg"> <!--attr aria-hidden="true"-->
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                                <a aria-label="Instagram" href="https://instagram.com/lisafantastico/" class="social-button instagram">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                                <a aria-label="Facebook" href="https://facebook.com/lisa.awesome.cunningham/" class="social-button facebook">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                                <a aria-label="Academia Edu" href="https://gsu.academia.edu/LisaCunningham/" class="social-button academia">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fas fa-university fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </div>
+                
+                            <div class="footer-links">
+                                    <a class="footer-link" data-value="#contact-anchor" href="#contact-anchor">Contact</a>
+                                <br><a class="footer-link" data-value="#contact-anchor" href="#contact-anchor">Hire Me</a>
+                                <br><a class="footer-link" data-value="#my-work-anchor" href="#my-work-anchor">Current Projects</a>
+                            </div>
+                            <div class="footer-links">
+                                <div class="dropdown"> 
+                                    <a class="footer-link dropdown-toggle dropdown-toggle-split" href="/" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Privacy Policy
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <span class="dropdown-item">If you grew up with siblings, you already know that this concept doesn't truly exist.</span>
+                                    </div>
+                                </div>
+                                <div class="dropdown"> 
+                                    <a class="footer-link dropdown-toggle dropdown-toggle-split" href="/" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Terms of Usage
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <span class="dropdown-item">At least take me out for a drink first.</span>
+                                    </div>
+                                </div>
+                                <!-- <a class="footer-link" href="#">Sitemap</a> -->
+                            </div>
+                        </div>
+                    </div> <!--Footer Links Row End (1 column inside)-->
+                </div> <!--Footer Links Col-8 End (1 row inside)-->
+
+                <div class="col-md-6 col-sm-12">
+                    <!--LOGO-->
+                    <a class="footer-brand" href="#">
+                        <img class="name-logo rounded-circle d-inline-block align-top img-fluid" src="assets/img/4.png" alt="RW Logo">
+                    </a>
+                </div> <!--Footer Logo Col-4 End (1 row inside)-->
+
+            </div> <!--First Footer Row End-->
+
+            <div class="row">
+                <div class="col">
+                        <p><span class="footer-text">Lisa Cunningham &copy; 2019<span id="year" class="footer-text"></span></span></p>
+                </div>
+            </div> <!--Second Footer Row End-->
+        </div>
+
+    <!-- JS Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/logic.js"></script>
+
+    <!-- Modals -->
+    <div class="modal fade" id="modal-copywriting" tabindex="-1" role="dialog" aria-labelledby="modal-copywriting" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modal-title">Copywriting</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="modal-col modal-col-desc col-lg-12 col-md-12">
+                            <p style="text-align: center;">Technical documentation, SOPs, and handbooks are my specialty. If your business needs any kind of documentation drawn up or reconstructed, contact me.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modal-close-button btn btn-secondary" data-dismiss="modal">Awesome!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-editing" tabindex="-1" role="dialog" aria-labelledby="modal-editing" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modal-title">Editing</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="modal-col modal-col-desc col-lg-12 col-md-12">
+                            <p style="text-align: center;">Not only can I make sure that your writing is clear, is error-free, and maintains your authorial voice, but I can offer genre-related editing suggestions regarding content and cohesiveness. I am available to discuss any length of editing project.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modal-close-button btn btn-secondary" data-dismiss="modal">Awesome!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-proofreading" tabindex="-1" role="dialog" aria-labelledby="modal-proofreading" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modal-title">Proofreading</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="modal-col modal-col-desc col-lg-12 col-md-12">
+                            <p style="text-align: center;">If you’re at a final stage before publication or submission, I will expertly line edit and grammar- and typo-check your document.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modal-close-button btn btn-secondary" data-dismiss="modal">Awesome!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!-- 
+    Responsive Breakpoints, based on screen width:
+    (xs) — col-# screen width < 576px (This is the “default” tier)
+    sm — col-sm-# screen width ≥ 576px
+    md — col-md-# screen width ≥ 768px
+    lg — col-lg-# screen width ≥ 992px
+    xl — col-xl-# screen width ≥ 1200px 
+
+    Use `col` for Columns that evenly fill across the viewport
+    Use `col-auto` for Columns that shrink to fit their content
+    The Auto-layout Columns can be combined with the 12-unit Columns
+    The Auto-layout Columns have responsive tiers (-sm,-md,-lg,-xl) too!
+-->
